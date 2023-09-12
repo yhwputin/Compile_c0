@@ -1,0 +1,88 @@
+（1）、
+输入：
+6，5，e
+输出：
+This number is great than or equal to 1.
+This number is smaller than 12.
+This number is great than 2.
+This number is not equal to c1.
+次数1
+e
+次数2
+e
+次数3
+e
+次数4
+e
+次数5
+e
+次数6
+e
+89
+s
+v1 is equal to 10
+
+（2）、
+输入：
+3，8，&
+输出：
+This number is great than or equal to 1.
+This number is smaller than 12.
+This number is smaller than or equal to 5.
+This number is great than 2.
+次数1
+&
+次数2
+&
+次数3
+&
+次数4
+&
+次数5
+&
+次数6
+&
+次数7
+&
+次数8
+&
+21
+v1 does not equal 10 or equal to 8;
+v1 is equal to 7
+
+（3）、
+输入：
+8，12，*
+输出：
+This number is great than or equal to 1.
+This number is smaller than 12.
+This number is great than 2.
+This number is not equal to c1.
+次数1
+*
+次数2
+*
+次数3
+*
+次数4
+*
+次数5
+*
+次数6
+*
+次数7
+*
+次数8
+*
+次数9
+*
+次数10
+*
+次数11
+*
+次数12
+*
+377
+v1 does not equal 10 or equal to 8;
+v1 is equal to 12
+

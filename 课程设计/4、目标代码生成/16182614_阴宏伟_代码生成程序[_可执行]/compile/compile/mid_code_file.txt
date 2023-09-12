@@ -1,0 +1,147 @@
+const int c1 = 3
+const int c2 = 4
+const char c3 = 115
+const char c4 = 116
+var int v1
+array int v2[13]
+var char v3
+array char v4[15]
+func int Fib
+para int n
+n == 0
+bz LABEL0
+ret 1
+LABEL0:
+n == 1
+bz LABEL1
+ret 1
+LABEL1:
+$VAR0 = n - 1
+push $VAR0
+$VAR1 = call Fib
+$VAR2 = n - 2
+push $VAR2
+$VAR3 = call Fib
+$VAR4 = $VAR1 + $VAR3
+ret $VAR4
+end func
+func void ifst
+para int c
+c == 4
+bz LABEL2
+print "This number is equal to4.\n"
+LABEL2:
+c >= 1
+bz LABEL3
+print "This number is great than or equal to1.\n"
+LABEL3:
+$VAR0 = 3 * 4
+c < $VAR0
+bz LABEL4
+print "This number is smaller than 12.\n"
+LABEL4:
+$VAR0 = v2[4]
+c <= $VAR0
+bz LABEL5
+print "This number is smaller than or equal to 5.\n"
+LABEL5:
+push 2
+$VAR0 = call Fib
+c > $VAR0
+bz LABEL6
+print "This number is great than 2.\n"
+LABEL6:
+c != 3
+bz LABEL7
+print "This number is not equal to c1.\n"
+LABEL7:
+ret 
+ret 
+end func
+func void whilest
+para int t
+para char c
+var int s
+s = t
+LABEL8:
+t >= 0
+bz LABEL9
+print "count:"
+$VAR0 = s - t
+$VAR1 = $VAR0 + 1
+print $VAR1
+print "\n"
+print c
+print "\n"
+$VAR0 = t - 1
+t = $VAR0
+goto LABEL8
+LABEL9:
+ret 
+ret 
+end func
+func void switchst
+v1 == 10
+bz LABEL11
+$VAR0 = v1 + 1
+v1 = $VAR0
+print 115
+print "\n"
+goto LABEL10
+LABEL11:
+$VAR0 == 8
+bz LABEL12
+$VAR0 = v1 - 2
+v1 = $VAR0
+$VAR0 = v1 + 2
+print $VAR0
+print "\n"
+goto LABEL10
+LABEL12:
+print "v1 does not equal 10 or equal to 8;\n"
+goto LABEL10
+LABEL10:
+print "v1 is equal to "
+print v1
+print "\n"
+ret 
+ret 
+end func
+func void main
+var int aaa
+var int _a2
+var int a3
+var char a4
+var char a5
+var char a6
+aaa = 0
+LABEL13:
+aaa != 13
+bz LABEL14
+push aaa
+$VAR0 = call Fib
+v2[aaa] = $VAR0
+$VAR0 = aaa + 1
+aaa = $VAR0
+goto LABEL13
+LABEL14:
+scan _a2
+push _a2
+call ifst
+scan a3
+scan a4
+push a3
+push a4
+call whilest
+$VAR0 = 6 * 4
+$VAR1 = $VAR0 / 8
+$VAR2 = _a2 + $VAR1
+$VAR3 = $VAR2 - 1
+$VAR4 = $VAR3 + 2
+v1 = $VAR4
+$VAR0 = v2[v1]
+print $VAR0
+print "\n"
+call switchst
+end
+end

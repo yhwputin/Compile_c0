@@ -1,0 +1,71 @@
+const int c1 = 3,c2 = 4;   //常量说明
+const char c3 = 's',c4 = 't';    //常量定义
+int v1,v2[13];   //变量说明，变量定义，int为类型标识符
+char v3,v4[15];	//变量的数组定义
+int odd(int s)
+int Fib(int n){    //递归，有返回值的函数定义
+	if(n==0)
+		return (1);
+	if(n==1)
+		return (1);
+	return (Fib(n-1)+Fib(n-2));
+}
+void ifst(int c){   //无返回值函数语句，条件语句
+	if(c==c2)     //4
+		printf("This number is equal to 4.");   //写语句括号里为字符串
+	if(c>=1)    
+		printf("This number is great than or equal to 1.");
+	if(c<c1*c2)    //12
+		printf("This number is smaller than 12.");
+	if(c<=v2[4])    //5
+		printf("This number is smaller than or equal to 5.");
+	if(c>Fib(2))    //2
+		printf("This number is great than 2.");
+	if(c!=c1)    //3
+		printf("This number is not equal to c1.");
+	return ;
+}
+void whilest(int t,char c){    //循环语句,参数表
+	int s = t
+	while(t>=0){
+		printf("次数",s-t+1);     
+		printf(c);    //语句列
+		t = t-1;    //加法运算符
+	}
+	return ;	
+}
+void switchst(){     //情况语句 
+	switch(v1){      //乘法运算符
+		case 10:      //情况表，情况子语句,10为常量
+		{
+			v1 = v1+1;    //加法运算符
+			printf(c3);     
+		}
+		case 8:
+		{
+			v1 = v1-2;
+			printf(v1+2);   //写语句括号里为表达式
+		}
+		default:   //缺省
+			printf("v1 does not equal 10 or equal to 8;");
+	} 
+	printf("v1 is equal to ",v1);     //写语句里为
+	return ;		
+}
+void main(){
+	int aaa,_a2,a3;//变量说明，变量定义，字母和下划线，标识符   
+	char a4,a5,a6;
+	aaa = 0;
+	while(aaa!=12){
+		v2[aaa] = Fib(aaa);//有返回值的函数调用语句
+		aaa = aaa+1;
+	}	
+	scanf(_a2);
+	ifst(_a2);//无返回值的函数调用语句
+	scanf(a3,a4);
+	whilest(a3,a4);     
+	v1 = _a2+6*4/8-1+2;
+	printf(v2[v1]);
+	switch();
+	return ;
+}

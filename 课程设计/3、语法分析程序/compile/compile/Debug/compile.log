@@ -1,0 +1,9 @@
+﻿  error.c
+  gra_ana.c
+  lex_ana.c
+d:\大三上\编译技术\编辑技术的自我修养\课程设计\3、语法分析程序\compile\compile\lex_ana.c(394): warning C4474: fprintf: 格式字符串中传递的参数太多
+  d:\大三上\编译技术\编辑技术的自我修养\课程设计\3、语法分析程序\compile\compile\lex_ana.c(394): note: 占位符和其参数预计 1 可变参数，但提供的却是 2 参数
+  main.c
+d:\大三上\编译技术\编辑技术的自我修养\课程设计\3、语法分析程序\compile\compile\main.c(14): warning C4013: “gets”未定义；假设外部返回 int
+  正在生成代码...
+  compile.vcxproj -> D:\大三上\编译技术\编辑技术的自我修养\课程设计\3、语法分析程序\compile\Debug\compile.exe

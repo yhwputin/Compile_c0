@@ -1,0 +1,13 @@
+void main(){
+	int a,b,c;
+	char d;
+	a = 5;
+	b = 3;
+	c = a+b;
+	d = $'z';
+	printf("hello world!");
+	printf("a=",a);
+	printf("b=",b);
+	printf("c=",c);
+	printf("d=",d);
+}

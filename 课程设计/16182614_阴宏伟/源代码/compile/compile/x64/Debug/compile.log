@@ -1,0 +1,4 @@
+﻿  main.c
+d:\大三上\编译技术\编辑技术的自我修养\课程设计\16182614_阴宏伟\源代码\compile\compile\main.c(21): warning C4013: “gets”未定义；假设外部返回 int
+d:\大三上\编译技术\编辑技术的自我修养\课程设计\16182614_阴宏伟\源代码\compile\compile\main.c(34): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  compile.vcxproj -> D:\大三上\编译技术\编辑技术的自我修养\课程设计\16182614_阴宏伟\源代码\compile\x64\Debug\compile.exe

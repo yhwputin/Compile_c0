@@ -1,0 +1,786 @@
+const char const_char_a = 97
+const char const_char_b = 98
+const char const_char_c = 99
+const char const_char_A = 65
+const int const_int_postive = 1
+const int const_int_zero = 0
+const int const_int_negtive = -1
+const char const_char_num = 57
+const char const_char_underline = 95
+const char const_char_add = 43
+const char const_char_mul = 42
+var int int_global_var
+var char char_global_var
+array int sort[10]
+func void testIfWhile
+const int test_if_1 = 1
+const int test_if_2 = 2
+const char const_char_a = 98
+const char const_char_b = 97
+var int test_if_result
+var int loop_num
+test_if_result = 0
+loop_num = 0
+$VAR0 = 98 + 1
+$VAR1 = 97 + 1
+$VAR0 > $VAR1
+bz LABEL0
+LABEL1:
+$VAR0 = test_if_result
+$VAR0 < 100
+bz LABEL2
+$VAR0 = test_if_result
+$VAR1 = loop_num
+$VAR2 = $VAR0 + $VAR1
+test_if_result = $VAR2
+$VAR0 = loop_num
+$VAR1 = $VAR0 + 1
+loop_num = $VAR1
+goto LABEL1
+LABEL2:
+$VAR0 = test_if_result
+$VAR1 = $VAR0 - 100
+$VAR2 = $VAR1 * 3
+$VAR2 == 15
+bz LABEL4
+$VAR0 = test_if_result
+$VAR1 = $VAR0 * 10
+$VAR2 = 0 - $VAR1
+$VAR3 = loop_num
+$VAR4 = 2 * $VAR3
+$VAR5 = $VAR2 + $VAR4
+$VAR6 = $VAR5 + 117
+$VAR7 = $VAR6 - 98
+test_if_result = $VAR7
+$VAR0 = loop_num
+$VAR1 = test_if_result
+$VAR2 = $VAR0 - $VAR1
+$VAR3 = 10 * 97
+$VAR4 = $VAR2 + $VAR3
+$VAR5 = $VAR4 - 100
+$VAR6 = $VAR5 + 42
+$VAR7 = $VAR6 + 34
+$VAR8 = test_if_result
+$VAR9 = 2 * $VAR8
+$VAR10 = $VAR7 + $VAR9
+loop_num = $VAR10
+goto LABEL3
+LABEL4:
+$VAR0 = test_if_result
+$VAR1 = $VAR0 * 4
+$VAR2 = loop_num
+$VAR3 = 5 * $VAR2
+$VAR4 = $VAR1 + $VAR3
+$VAR5 = $VAR4 + 24
+$VAR6 = $VAR5 - 97
+$VAR7 = $VAR6 + 99
+test_if_result = $VAR7
+$VAR0 = loop_num
+$VAR1 = 0 - $VAR0
+$VAR2 = test_if_result
+$VAR3 = $VAR1 + $VAR2
+$VAR4 = 4 * 97
+$VAR5 = $VAR3 + $VAR4
+$VAR6 = $VAR5 - 1653
+$VAR7 = $VAR6 + 453
+$VAR8 = $VAR7 + 555
+$VAR9 = test_if_result
+$VAR10 = 4 * $VAR9
+$VAR11 = $VAR8 - $VAR10
+loop_num = $VAR11
+goto LABEL3
+LABEL3:
+LABEL0:
+$VAR0 = test_if_result
+print $VAR0
+$VAR0 = loop_num
+print $VAR0
+test_if_result = 0
+loop_num = 0
+$VAR0 = 98 + 1
+$VAR1 = 97 + 1
+$VAR0 >= $VAR1
+bz LABEL5
+LABEL6:
+$VAR0 = test_if_result
+$VAR0 < 10
+bz LABEL7
+$VAR0 = loop_num
+$VAR0 > 2
+bz LABEL8
+$VAR0 = test_if_result
+$VAR1 = loop_num
+$VAR2 = $VAR0 + $VAR1
+test_if_result = $VAR2
+LABEL8:
+$VAR0 = loop_num
+$VAR1 = $VAR0 + 1
+loop_num = $VAR1
+$VAR0 = test_if_result
+$VAR1 = $VAR0 / 2
+$VAR2 = $VAR1 * 2
+$VAR3 = test_if_result
+$VAR2 == $VAR3
+bz LABEL9
+$VAR0 = loop_num
+$VAR1 = $VAR0 + 1
+loop_num = $VAR1
+LABEL9:
+goto LABEL6
+LABEL7:
+LABEL5:
+$VAR0 = test_if_result
+print $VAR0
+$VAR0 = loop_num
+print $VAR0
+test_if_result = 0
+loop_num = 0
+1 < 2
+bz LABEL10
+LABEL11:
+$VAR0 = test_if_result
+$VAR0 < 20
+bz LABEL12
+$VAR0 = test_if_result
+$VAR1 = test_if_result
+$VAR2 = $VAR1 / 2
+$VAR3 = $VAR2 * 2
+$VAR4 = $VAR0 - $VAR3
+$VAR4 == 0
+bz LABEL14
+$VAR0 = test_if_result
+$VAR1 = $VAR0 + 1
+test_if_result = $VAR1
+goto LABEL13
+LABEL14:
+$VAR4 == 1
+bz LABEL15
+$VAR0 = test_if_result
+$VAR1 = loop_num
+$VAR2 = $VAR0 + $VAR1
+test_if_result = $VAR2
+goto LABEL13
+LABEL15:
+LABEL13:
+$VAR0 = loop_num
+$VAR1 = $VAR0 + 1
+loop_num = $VAR1
+goto LABEL11
+LABEL12:
+$VAR0 = test_if_result
+$VAR1 = test_if_result
+$VAR2 = $VAR1 / 2
+$VAR3 = $VAR2 * 2
+$VAR0 == $VAR3
+bz LABEL16
+$VAR0 = test_if_result
+$VAR1 = $VAR0 * 7
+$VAR2 = loop_num
+$VAR3 = 2 * $VAR2
+$VAR4 = $VAR1 + $VAR3
+$VAR5 = $VAR4 + 99
+$VAR6 = $VAR5 - 97
+$VAR7 = $VAR6 + 103
+test_if_result = $VAR7
+$VAR0 = loop_num
+$VAR1 = 0 - $VAR0
+$VAR2 = test_if_result
+$VAR3 = $VAR1 + $VAR2
+$VAR4 = 2 * 97
+$VAR5 = $VAR3 + $VAR4
+$VAR6 = $VAR5 - 523
+$VAR7 = $VAR6 + 53
+$VAR8 = $VAR7 + 355
+$VAR9 = test_if_result
+$VAR10 = 2 * $VAR9
+$VAR11 = $VAR8 - $VAR10
+loop_num = $VAR11
+LABEL16:
+LABEL10:
+$VAR0 = test_if_result
+print $VAR0
+$VAR0 = loop_num
+print $VAR0
+2 <= 1
+bz LABEL17
+print "2 <= 1"
+LABEL17:
+1 == 2
+bz LABEL18
+print "1 == 2"
+LABEL18:
+test_if_result = 0
+loop_num = 0
+1 != 2
+bz LABEL19
+$VAR0 = test_if_result
+$VAR1 = loop_num
+$VAR2 = $VAR1 * 2
+$VAR3 = $VAR0 - $VAR2
+$VAR3 == 0
+bz LABEL21
+LABEL22:
+$VAR0 = test_if_result
+$VAR0 < 30
+bz LABEL23
+$VAR0 = test_if_result
+$VAR1 = $VAR0 / 2
+$VAR2 = $VAR1 * 2
+$VAR3 = test_if_result
+$VAR4 = $VAR2 - $VAR3
+$VAR4 == -1
+bz LABEL25
+$VAR0 = test_if_result
+$VAR1 = $VAR0 + 1
+test_if_result = $VAR1
+goto LABEL24
+LABEL25:
+$VAR4 == 0
+bz LABEL26
+$VAR0 = test_if_result
+$VAR1 = loop_num
+$VAR2 = $VAR0 + $VAR1
+test_if_result = $VAR2
+goto LABEL24
+LABEL26:
+LABEL24:
+$VAR0 = loop_num
+$VAR1 = $VAR0 + 1
+loop_num = $VAR1
+goto LABEL22
+LABEL23:
+goto LABEL20
+LABEL21:
+$VAR0 = 0 - 1
+test_if_result = $VAR0
+$VAR0 = 0 - 1
+loop_num = $VAR0
+goto LABEL20
+LABEL20:
+LABEL19:
+$VAR0 = test_if_result
+print $VAR0
+$VAR0 = loop_num
+print $VAR0
+$VAR0 = 1 - 1
+$VAR0 != 0
+bz LABEL27
+print "1 - 1 = true"
+LABEL27:
+$VAR0 = 0 - 1
+int_global_var = $VAR0
+char_global_var = 97
+ret 
+end func
+func void testSwitchCase
+para int test_switch_int
+para char test_switch_char
+$VAR0 = test_switch_int
+$VAR0 == -1
+bz LABEL29
+LABEL30:
+$VAR0 = test_switch_int
+$VAR1 = $VAR0 * 20
+$VAR2 = 30 / 5
+$VAR3 = $VAR1 + $VAR2
+$VAR3 < 10
+bz LABEL31
+$VAR0 = test_switch_int
+$VAR0 <= 0
+bz LABEL32
+$VAR0 = test_switch_int
+$VAR1 = $VAR0 + 1
+test_switch_int = $VAR1
+LABEL32:
+goto LABEL30
+LABEL31:
+goto LABEL28
+LABEL29:
+$VAR0 == 0
+bz LABEL33
+$VAR0 = test_switch_int
+$VAR1 = 1 * -1
+$VAR2 = $VAR0 - $VAR1
+$VAR2 == 0
+bz LABEL34
+LABEL35:
+$VAR0 = test_switch_int
+$VAR0 <= 0
+bz LABEL36
+$VAR0 = test_switch_int
+$VAR1 = $VAR0 + 1
+$VAR2 = $VAR1 * -2
+test_switch_int = $VAR2
+goto LABEL35
+LABEL36:
+LABEL34:
+goto LABEL28
+LABEL33:
+$VAR0 == 1
+bz LABEL37
+$VAR0 = 0 - 233
+test_switch_int = $VAR0
+goto LABEL28
+LABEL37:
+test_switch_int = 233
+goto LABEL28
+LABEL28:
+$VAR0 = test_switch_char
+$VAR0 == 97
+bz LABEL39
+test_switch_char = 97
+goto LABEL38
+LABEL39:
+$VAR0 == 65
+bz LABEL40
+test_switch_char = 65
+goto LABEL38
+LABEL40:
+$VAR0 == 57
+bz LABEL41
+test_switch_char = 57
+goto LABEL38
+LABEL41:
+$VAR0 == 95
+bz LABEL42
+test_switch_char = 95
+goto LABEL38
+LABEL42:
+$VAR0 == 43
+bz LABEL43
+test_switch_char = 43
+goto LABEL38
+LABEL43:
+$VAR0 == 42
+bz LABEL44
+test_switch_char = 42
+goto LABEL38
+LABEL44:
+test_switch_char = 119
+goto LABEL38
+LABEL38:
+0 == 0
+bz LABEL46
+goto LABEL45
+LABEL46:
+LABEL45:
+$VAR0 = test_switch_int
+print $VAR0
+$VAR0 = test_switch_char
+print $VAR0
+$VAR0 = 0 - 2
+int_global_var = $VAR0
+char_global_var = 98
+ret 
+end func
+func int returnInt
+ret 10
+end func
+func char returnChar
+ret 114
+end func
+func int returnIntParameter
+para int select
+para int int_parameter_1
+para int int_parameter_2
+para int int_parameter_3
+para int int_parameter_4
+var int _tmp
+$VAR0 = select
+$VAR0 == 1
+bz LABEL48
+$VAR0 = int_parameter_1
+_tmp = $VAR0
+goto LABEL47
+LABEL48:
+$VAR0 == 2
+bz LABEL49
+$VAR0 = int_parameter_2
+_tmp = $VAR0
+goto LABEL47
+LABEL49:
+$VAR0 == 3
+bz LABEL50
+$VAR0 = int_parameter_3
+_tmp = $VAR0
+goto LABEL47
+LABEL50:
+$VAR0 == 4
+bz LABEL51
+$VAR0 = int_parameter_4
+_tmp = $VAR0
+goto LABEL47
+LABEL51:
+_tmp = 0
+goto LABEL47
+LABEL47:
+$VAR0 = _tmp
+ret $VAR0
+end func
+func char returnCharParameter
+para int select
+para char char_parameter_1
+para char char_parameter_2
+para char char_parameter_3
+para char char_parameter_4
+$VAR0 = select
+$VAR0 == 1
+bz LABEL53
+$VAR0 = char_parameter_1
+ret $VAR0
+goto LABEL52
+LABEL53:
+$VAR0 == 2
+bz LABEL54
+$VAR0 = char_parameter_2
+ret $VAR0
+goto LABEL52
+LABEL54:
+$VAR0 == 3
+bz LABEL55
+$VAR0 = char_parameter_3
+ret $VAR0
+goto LABEL52
+LABEL55:
+$VAR0 == 4
+bz LABEL56
+$VAR0 = char_parameter_4
+ret $VAR0
+goto LABEL52
+LABEL56:
+ret 48
+goto LABEL52
+LABEL52:
+end func
+func void testAssign
+const int test_assign_10 = 10
+var int int_test_assign
+array int int_array_test_assign[3]
+var char char_test_assign
+array char char_array_test_assign[3]
+push 2
+$VAR0 = 0 - -1
+push $VAR0
+$VAR1 = 0 - 2
+push $VAR1
+push 10
+$VAR2 = call returnChar
+$VAR3 = $VAR2 - 97
+push $VAR3
+$VAR4 = call returnIntParameter
+$VAR5 = 99 - 97
+$VAR6 = $VAR4 * $VAR5
+$VAR7 = $VAR6 / 2
+$VAR8 = 10 + $VAR7
+int_test_assign = $VAR8
+$VAR0 = int_test_assign
+$VAR1 = $VAR0 / 4
+$VAR2 = $VAR1 + 97
+$VAR3 = $VAR2 - 97
+$VAR4 = $VAR3 - 2
+$VAR5 = 0 - -2
+int_array_test_assign[$VAR4] = $VAR5
+$VAR0 = int_test_assign
+$VAR1 = int_array_test_assign[0]
+$VAR2 = $VAR0 / $VAR1
+$VAR3 = -2 + $VAR2
+$VAR4 = call returnInt
+$VAR5 = $VAR3 + $VAR4
+$VAR6 = $VAR5 - 11
+$VAR7 = call returnInt
+$VAR8 = 0 - $VAR7
+$VAR9 = call returnChar
+$VAR10 = $VAR9 - 97
+$VAR11 = 10 * $VAR10
+push 4
+$VAR12 = 0 - 98
+$VAR13 = $VAR12 + 99
+push $VAR13
+$VAR14 = call returnInt
+push $VAR14
+push 10
+push 97
+$VAR15 = call returnIntParameter
+$VAR16 = $VAR11 + $VAR15
+$VAR17 = $VAR8 + $VAR16
+int_array_test_assign[$VAR6] = $VAR17
+$VAR0 = 0 - 255
+$VAR1 = int_array_test_assign[1]
+$VAR2 = $VAR0 + $VAR1
+$VAR3 = 98 * 2
+$VAR4 = $VAR2 + $VAR3
+$VAR5 = $VAR4 - 196
+$VAR6 = 0 - 98
+$VAR7 = $VAR6 + 99
+int_array_test_assign[$VAR5] = $VAR7
+$VAR0 = call returnChar
+char_test_assign = $VAR0
+push 4
+push 97
+$VAR0 = call returnChar
+push $VAR0
+$VAR1 = call returnChar
+push $VAR1
+push 97
+$VAR2 = call returnCharParameter
+char_array_test_assign[0] = $VAR2
+$VAR0 = char_array_test_assign[0]
+char_array_test_assign[1] = $VAR0
+char_array_test_assign[2] = 120
+$VAR0 = int_test_assign
+print $VAR0
+$VAR0 = int_array_test_assign[0]
+print $VAR0
+$VAR0 = int_array_test_assign[1]
+print $VAR0
+$VAR0 = int_array_test_assign[2]
+print $VAR0
+$VAR0 = char_test_assign
+print $VAR0
+$VAR0 = char_array_test_assign[0]
+print $VAR0
+$VAR0 = char_array_test_assign[1]
+print $VAR0
+$VAR0 = char_array_test_assign[2]
+print $VAR0
+$VAR0 = 0 - 3
+int_global_var = $VAR0
+char_global_var = 99
+ret 
+end func
+func void testInputOutput
+var int int_test_input
+var char char_test_input
+var int int_global_var
+var char char_global_var
+scan int_test_input
+scan char_test_input
+print " !#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+print "int_test_input = "
+$VAR0 = int_test_input
+print $VAR0
+print "char_test_input = "
+$VAR0 = char_test_input
+print $VAR0
+$VAR0 = 0 - 4
+int_global_var = $VAR0
+char_global_var = 100
+ret 
+end func
+func void testTrick
+ret 
+end func
+func int judge1
+para int a
+para int b
+para int c
+para int d
+var int ret
+ret = 0
+$VAR0 = a
+$VAR1 = b
+$VAR0 < $VAR1
+bz LABEL57
+$VAR0 = c
+$VAR1 = d
+$VAR0 >= $VAR1
+bz LABEL58
+ret = 1
+LABEL58:
+LABEL57:
+$VAR0 = ret
+ret $VAR0
+end func
+func int judge2
+para int a
+para int b
+para int c
+para int d
+var int ret
+ret = 0
+$VAR0 = a
+$VAR1 = b
+$VAR0 < $VAR1
+bz LABEL59
+$VAR0 = c
+$VAR1 = d
+$VAR0 <= $VAR1
+bz LABEL60
+ret = 1
+LABEL60:
+LABEL59:
+$VAR0 = ret
+ret $VAR0
+end func
+func void Qsort
+para int low
+para int high
+var int first
+var int last
+var int key
+$VAR0 = low
+first = $VAR0
+$VAR0 = high
+last = $VAR0
+$VAR0 = first
+$VAR1 = sort[$VAR0]
+key = $VAR1
+$VAR0 = low
+$VAR1 = high
+$VAR0 >= $VAR1
+bz LABEL61
+ret 
+LABEL61:
+LABEL62:
+$VAR0 = first
+$VAR1 = last
+$VAR0 < $VAR1
+bz LABEL63
+LABEL64:
+$VAR0 = first
+push $VAR0
+$VAR1 = last
+push $VAR1
+$VAR2 = last
+$VAR3 = sort[$VAR2]
+push $VAR3
+$VAR4 = key
+push $VAR4
+$VAR5 = call judge1
+$VAR5 == 1
+bz LABEL65
+$VAR0 = last
+$VAR1 = $VAR0 - 1
+last = $VAR1
+goto LABEL64
+LABEL65:
+$VAR0 = first
+$VAR1 = last
+$VAR2 = sort[$VAR1]
+sort[$VAR0] = $VAR2
+LABEL66:
+$VAR0 = first
+push $VAR0
+$VAR1 = last
+push $VAR1
+$VAR2 = first
+$VAR3 = sort[$VAR2]
+push $VAR3
+$VAR4 = key
+push $VAR4
+$VAR5 = call judge2
+$VAR5 == 1
+bz LABEL67
+$VAR0 = first
+$VAR1 = $VAR0 + 1
+first = $VAR1
+goto LABEL66
+LABEL67:
+$VAR0 = last
+$VAR1 = first
+$VAR2 = sort[$VAR1]
+sort[$VAR0] = $VAR2
+goto LABEL62
+LABEL63:
+$VAR0 = first
+$VAR1 = key
+sort[$VAR0] = $VAR1
+$VAR0 = low
+push $VAR0
+$VAR1 = first
+$VAR2 = $VAR1 - 1
+push $VAR2
+call Qsort
+$VAR0 = first
+$VAR1 = $VAR0 + 1
+push $VAR1
+$VAR2 = high
+push $VAR2
+call Qsort
+ret 
+ret 
+end func
+func void testRecursion
+var int i
+sort[0] = 5
+sort[1] = 8
+sort[2] = 3
+sort[3] = 6
+sort[4] = 4
+sort[5] = 1
+sort[6] = 2
+sort[7] = 7
+push 0
+push 7
+call Qsort
+i = 0
+LABEL68:
+$VAR0 = i
+$VAR0 < 8
+bz LABEL69
+$VAR0 = i
+$VAR1 = sort[$VAR0]
+print $VAR1
+$VAR0 = i
+$VAR1 = $VAR0 + 1
+i = $VAR1
+goto LABEL68
+LABEL69:
+$VAR0 = 0 - 5
+int_global_var = $VAR0
+char_global_var = 101
+ret 
+end func
+func void testCallFunction
+var int test_select
+scan test_select
+$VAR0 = test_select
+$VAR0 == 0
+bz LABEL71
+call testIfWhile
+goto LABEL70
+LABEL71:
+$VAR0 == 1
+bz LABEL72
+push 1
+push 97
+call testSwitchCase
+push -1
+push 43
+call testSwitchCase
+push 0
+push 95
+call testSwitchCase
+push 2
+push 57
+call testSwitchCase
+goto LABEL70
+LABEL72:
+$VAR0 == 2
+bz LABEL73
+call testAssign
+goto LABEL70
+LABEL73:
+$VAR0 == 3
+bz LABEL74
+call testInputOutput
+goto LABEL70
+LABEL74:
+$VAR0 == 4
+bz LABEL75
+call testRecursion
+goto LABEL70
+LABEL75:
+LABEL70:
+$VAR0 = int_global_var
+print $VAR0
+$VAR0 = char_global_var
+print $VAR0
+ret 
+end func
+func void main
+int_global_var = 0
+char_global_var = 95
+call testCallFunction
+call testTrick
+end

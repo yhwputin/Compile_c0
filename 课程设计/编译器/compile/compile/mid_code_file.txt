@@ -1,0 +1,15 @@
+var int x
+func int add
+$VAR0 = x
+$VAR1 = $VAR0 + 1
+x = $VAR1
+$VAR0 = x
+ret $VAR0
+end func
+func void main
+x = 0
+$VAR0 = x
+$VAR1 = call add
+$VAR2 = $VAR0 + $VAR1
+print $VAR2
+end

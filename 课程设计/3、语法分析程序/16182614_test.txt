@@ -1,0 +1,70 @@
+const int c1=3,c2=4;
+const char c3='s',c4='t';
+int v1,v2[13];
+char v3,v4[15];
+int Fib(int n){
+	if(n==0)
+		return(1);
+	if(n==1)
+		return(1);
+	return(Fib(n-1)+Fib(n-2));
+}
+void ifst(int c){
+	if(c==c2)
+		printf("This number is equal to4.");
+	if(c>=1)
+		printf("This number is great than or equal to1.");
+	if(c<c1*c2)
+		printf("This number is smaller than 12.");
+	if(c<=v2[4])
+		printf("This number is smaller than or equal to 5.");
+	if(c>Fib(2))
+		printf("This number is great than 2.");
+	if(c!=c1)
+		printf("This number is not equal to c1.");
+	return;
+}
+void whilest(int t,char c){
+	int s;
+	while(t>=0){
+		printf("count:",s-t+1);
+		printf(c);
+		t=t-1;
+	}
+	return;	
+}
+void switchst(){
+	switch(v1){
+		case 10:
+		{
+			v1=v1+1;
+			printf(c3);
+		}
+		case 8:
+		{
+			v1=v1-2;
+			printf(v1+2);
+		}
+		default:
+			printf("v1 does not equal 10 or equal to 8;");
+	}
+	printf("v1 is equal to",v1);
+	return;		
+}
+void main(){
+	int aaa,_a2,a3;
+	char a4,a5,a6;
+	aaa=0;
+	while(aaa!=12){
+		v2[aaa]=Fib(aaa);
+		aaa=aaa+1;
+	}	
+	scanf(_a2);
+	ifst(_a2);
+	scanf(a3,a4);
+	whilest(a3,a4);
+	v1=_a2+6*4/8-1+2;
+	printf(v2[v1]);
+	switchst();
+	return;
+}
